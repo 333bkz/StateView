@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/state_margin"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Style_Loading_Dialog_ProgressBar"
+        android:layout_width="@dimen/loading_progress_size"
+        android:layout_height="@dimen/loading_progress_size"
+        android:indeterminate="false"
+        android:padding="3dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
